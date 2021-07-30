@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/master.css">
+    <title>Create a List</title>
+</head>
+<body>
+    <nav>
+        <div class="grid-2">
+                <header>
+                    <a href = "index.html">Weeklist</a>   
+                </header>
+            <div>
+                <ul>
+                    <a href="createlist.html"><li>Create a Wishlist</li></a>  
+                    <a href="mywishlist.html"><li>My Wishlists</li></a>
+                    <a href="login.html"><li>Login</li></a>
+                    <a href="signup.html"><li>Sign Up</li></a>       
+                </ul>            
+            </div>            
+        </div>
+    </nav>
+    <section id = "createlist">
+    <div class="form-wrapper">
+        <h1>Create a List</h1> 
+        
+        <form action="">
+        <div class="grid2-3">        
+                    <div class="col-25">
+                        <label for="title">List Title: </label>
+                    </div>
+                    <div class="col-75">
+                       <input type="text"> 
+                    </div>
+                    <div class="col-25">
+                        <label for="password">List Password:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="password" name="password" size="25" />
+                    </div>
+                    <div class="col-25">
+                        <label for="description">Description:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea rows = 6></textarea>
+                    </div>
+                <!--Expiry Date Here-->
+        </div>
+            <button>Create List</button>
+        </form>
+        
+        </div>      
+    </div>
+</section>
+</body>
+</html>

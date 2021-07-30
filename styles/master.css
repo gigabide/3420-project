@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+/* Set Variables */
+
+:root{
+	--bgcol:#f7f7f7;
+	--col1:#F8B195;
+	--col2:#F67280;
+	--col3:#C06C84;
+	--col4:#6C5B7B;
+	--col5:#355C7D;
+	--col6:#a65c4f;
+}
+
+/*#########################################
+
+Body Styling
+
+############################################*/
+
+/* Set Font and Background Colour for Body */
+body{
+	font-family:Roboto;
+	background-color:var(--bgcol);
+	margin:0;
+}
+
+/*#########################################
+
+Header Styling
+
+############################################*/
+
+/* Make Header Items Flex Container */
+header{
+	display: flex;
+	align-items: center;
+	font-size: 1.5em;
+	justify-content: center;
+}
+/* Homepage Link Color in Nav */
+header a{
+	color: white;
+	text-decoration: none;
+}
+
+/*#########################################
+
+Navbar Styling
+
+############################################*/
+
+/* Change Font Size, Font and Background Colour of Nav Bar */
+nav{
+	text-align: center;
+	font-size: 1rem;
+    background-color:var(--col5);
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.35em;
+}
+
+/* Makes Nav Transparent for Certain Pages */
+.pixart nav {
+	background-color: transparent;
+}
+
+/* Make Nav List Flex Box with No List Stylings */
+nav ul{
+	list-style-type:none;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+
+/* Remove Text Decoration for Links and Change Colour of Text */
+nav ul a{
+	text-decoration:none;
+	color:white;
+}
+
+/* Change Cursor Hover and Makes Links in Nav Look Nice */
+nav ul a{
+	text-align: center;
+	cursor:pointer;
+	flex:auto;
+}
+
+/* Changes Hover Colour */
+nav ul li:hover{
+	background-color: var(--col4);
+}
+
+/*#########################################
+
+Homepage Sample Wishists Styling
+
+############################################*/
+
+/* Background Colour */
+.sample-lists{
+	background-color: var(--bgcol);
+}
+
+/* Make Rectangles With Sample Lists Inside */
+.samlist{
+	background-color: var(--col1);
+	height: 55vh;
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	color: white;
+	font-weight: 700;
+	padding-top: 0.625rem;
+	border-radius: 0.5rem;
+	border: 2px solid white;
+	cursor: pointer;
+}
+
+/* Hover Border Effect For Sample Lists */
+.samlist:hover {
+	border: 2px solid black;
+}
+
+/* Image Properties for Sample Lists */
+.samlist img{
+	max-height: 320px;
+	max-width: 450px;
+	width: 100%;
+	height: auto;
+	padding-top: 1em;
+	text-align: center;
+}
+
+/* Change Text for Name of List */
+.samlist span {
+		text-align: left;
+}
+
+/* Change Text for Description/Items of Sample List */
+.samlist p {
+	padding: 2px 0 0 10px;
+	font-size: 0.60em;
+	color: black;
+	text-align: left;
+}
+
+/* */
+#sample-lists .grid-container{
+	font-size:1.5em;
+	width:100vw;
+	text-align: center;
+}
+
+.createbutton {
+	margin-top: 15vh;
+	text-align: left;
+}
+
+.createbutton a{
+    text-decoration:none;
+	color: black;
+}
+
+.createbutton .button {
+	margin-right: 13vw;
+	background-color: var(--col1);
+	border-radius: .25rem;
+	font-weight: 700;
+	font-size: 1.125rem;
+	text-decoration: none !important;
+	border-style: solid;
+	cursor: pointer;
+	text-align: center;
+	border-width: 2px;
+	width: 100%;
+	height: auto;
+}
+
+.createbutton .button:hover {
+	color: var(--bgcol);
+	background-color: var(--col5);
+}
+
+
+/*#########################################
+
+My Wishlists Page Styling
+
+############################################*/
+
+#mywishlists h1{
+	text-align: center;
+	font-weight: bold;
+}
+
+#mywishlists .title{
+	margin: 0;
+}
+
+#mywishlists .grid-container{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+#mywishlists .wishlist-preview{
+	background-color: var(--col1);
+}
+
+.wishlist-preview p{
+	font-size: 0.9rem;
+	margin: 1rem;
+}
+
+.list-thumbnail{
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+.icon-links{
+	text-align: center;
+	display: flexbox;
+	flex-direction: row;
+	padding-bottom: 1rem;
+}
+
+.icon-links a{
+	color: black;
+}
+
+/* Form Styling
+
+form button,form input,form label{
+	font-size:.8em
+}
+form button,form input{
+	padding:.5em;
+	border-radius:.5em;
+	border:solid 1px #000
+}
+form button{
+    background-color:var(--col3);
+    width: 100%;
+    color:var(--bgcol);
+    border: var(--col1) solid 1px;
+    cursor: pointer;
+}
+.button{
+    padding: 1rem;
+}
+.login-container{
+    color: var(--bgcol);
+    border: var(--col1) solid 2px;
+    display: inline-block;
+    margin-top: 30vh;
+    height: auto;
+    background-color: var(--col5);
+}
+.signup-container{
+    color: var(--bgcol);
+    border: var(--col1) solid 2px;
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 30vh;
+    background-color: var(--col5);
+}
+.form-wrapper{
+    text-align: center;
+}
+.text-box{
+    padding: 0.5rem;
+}
+
+*/
+
+.form-wrapper{
+	position: relative;
+	top: 30vh;
+    max-width: 500px;
+    width: 100%;
+	background-color: var(--col5);
+	margin: auto;
+	color: white;
+	box-shadow: .1rem .1rem 1rem rgba(0,0,0,0.125);
+	border: var(--col1) solid 2px;
+}
+
+.form-container{
+    padding: 1rem;
+}
+
+.headtext{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.form-container .form{
+    width: 100%;
+}
+
+.text-box{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.text-box label{
+    width:14vw;
+    font-size: 1.1rem;
+}
+
+input[type=text], 
+input[type=password],
+input[type=email]{
+    background: #f1f1f1;
+    width: 100%;
+    outline: none;
+    border: solid 1px black;
+    padding: .5em;
+    border-radius: .3em;
+}
+
+.form-container .button{
+	width: 100%;
+	padding: .5rem;
+	font-size: 1rem;
+	border: 0;
+}
+
+.loginbg{
+	min-height:100%;
+	min-width:1024px;
+	width:100%;
+	height:auto;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:-1
+}
+
+#createlist{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#createlist input[type=text],
+textarea{
+	width: 95%;
+	resize: none;
+}
+#createlist button{
+	width: 10%;
+}
+.col-25{
+	text-align: left;
+	font-size: 1.1rem;
+}
+.center{
+	text-align:center;
+	margin:auto
+}
+.grid-3{
+	margin-left: 8vw;
+	margin-right: 8vw;
+	display:grid;
+	grid-gap: 6rem;
+	grid-template-columns:1fr 1fr 1fr;
+}
+
+.grid-2{
+	text-align: left;
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns:1fr 2fr
+}
+
+.grid2-3{
+    height: 25vh;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
+}
+.grid3-2{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: 1fr 1fr;
+	gap: 1rem;
+}
+
+footer{
+    color: white;
+    background-color: var(--col5);
+    padding: 2rem;
+}

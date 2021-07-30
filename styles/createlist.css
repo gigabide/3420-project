@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+
+/****************************/
+
+body{
+    font-family: Oxygen;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-container{
+    border: solid 1px black;
+    background-color: #355C7D;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.grid3-2{
+    height: 25vh;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
+}
+input[type=text],
+textarea{
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+}
